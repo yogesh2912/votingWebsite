@@ -1,0 +1,19 @@
+body {
+  padding: 0px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+#see {
+	font-size: 70px;
+	padding-left:10px;
+}
+#ss1 {
+		font-size: 1040px;
+		font-color: white;
+		background: #b3b3e6;
+}
+#ss2{
+
+}
+a {
+  color: #00B7FF;
+}

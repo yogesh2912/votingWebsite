@@ -1,0 +1,28 @@
+
+
+<nav class="navbar navbar-dark" style="background-color:  #ac00e6; fixed-top">
+  <div class="container-fluid">
+    	<div class="dropdown megaMenu" id="see">
+      		<a class="dropbtn mdl-layout__tab" href="/"><h1 class="text-white">GoVote</h1></a>
+    	</div>
+    
+   		<ul class="nav navbar-nav navbar-right">
+     		{{# if login}}
+     	 
+     	 		
+            <li><a href="/logout"><span class="glyphicon glyphicon-log-in"></span><p class="text-white"> LogOut</p></a></li>
+     	 
+
+     		{{else}}
+     	 
+				    <li><a href="/user/signup"><span class="glyphicon glyphicon-user"></span><p class="text-white"> Sign Up</p></a></li>
+            <li><a href="/user/login"><span class="glyphicon glyphicon-log-in"></span><p class="text-white"> Login</p></a></li>
+     	 
+
+     		{{/if}}
+     	</ul> 
+    
+  </div>
+</nav>
+  
+

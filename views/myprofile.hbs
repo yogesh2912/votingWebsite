@@ -1,0 +1,37 @@
+<section class="ml-5 mr-5 mt-5 border border-success">
+	<div class="ml-4 mr-2 mt-3">
+		<h1>Hello: {{data.email}}</h1>
+		<hr class="w-80 mx-auto pt-2 ">
+		{{# if data.isVTeam}}
+			<div class="ml-4 mr-4 mt-4"><h3>Favorite Team: {{data.bestTeam}}</h3></div>
+		{{else}}
+			<div class="ml-4 mr-4 mt-4">
+				<h3>Favorite Team: You have not voted yet</h3>
+				<a href="#" class="btn btn-success pull-right mt-1" role="button">Choose Favorite team</a>
+			</div>
+
+		{{/if}}
+
+		{{# if data.isVPlayer}}
+			<div class="ml-4 mr-4 mt-4"><h3>Favorite Player: {{data.bestPlayer}}</h3></div>
+		{{else}}
+			<div class="ml-4 mr-4 mt-4">
+				<h3>Favorite Player: You have not voted yet</h3>
+				<a href="#" class="btn btn-success pull-right mt-1" role="button">Choose Favorite player</a>
+			</div>
+
+		{{/if}}
+
+		<div class="ml-4 mr-4 mt-4">
+			<h3>City: Phagwara</h3>
+		</div>
+
+		<div class="ml-4 mr-4 mt-4">
+			<h3>State: Punjab</h3>
+		</div>
+
+		<div class="ml-4 mr-4 mt-4">
+			<h3>Course: B.Tech(CSE)</h3>
+		</div>
+	</div>
+</section>

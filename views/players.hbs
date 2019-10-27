@@ -1,0 +1,26 @@
+<section class="ml-5 mr-5 mt-5">
+    {{# each players}}
+        <div class="row">
+        {{# each this}}
+                <div class="col-sm-6 col-md-4">
+            <div class="thumbnail">
+                <img src="{{this.imagepath}}" alt="..." class="img-responsive" height="300">
+                <div class="caption">
+                    <h3>{{this.title}}</h3>
+                    <p class="name">Name : {{this.name}}</p>
+                    <div>
+                        <div class="birthplace pull-left">Birth Place  : {{this.birthplace}}</div>
+                       
+                        <a href="vote/{{this._id}}" class="btn btn-success pull-right mt-3" role="button">Vote</a>
+                        <a href="/players/{{this._id}}" class="btn btn-success pull-right mt-3" role="button">About</a>
+                    </div>
+                </div>
+            </div>
+            </div>
+        {{/each}}
+        </div>
+    {{/each}}
+</section>
+
+
+   

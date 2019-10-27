@@ -1,0 +1,30 @@
+<section class="ml-5 mr-5 mt-3">
+	{{# each data}}
+		
+			<div class="row justify-content-start mt-4">
+				
+					<div class="col-sm-6 col-md-4">
+					   <div class="thumbnail">
+						 <img src="{{this.imagepath}}" height="250" >
+						</div>
+					</div>
+					<div>
+						<div>
+							<h1>{{this.name}}</h1>
+							<b>Right Handed Batsman</b><br>
+							<b>India</b>
+							<hr class="w-100 mx-auto">
+						</div>
+						<div>
+							<h5>Number of Votes: {{this.noOfVotes}}</h5>
+							<div>
+		  						<a href="/players/{{this._id}}" class="btn btn-info " role="button">View Profile</a>	
+		  					</div>
+
+						</div>
+					</div>
+					
+			</div>
+		
+	{{/each}}
+</section>
